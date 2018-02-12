@@ -71,11 +71,18 @@ function prepare_sources()
 ##
 function install_dependencies()
 {
-	sudo apt install -y devscripts
-	sudo apt install -y build-essential
-	sudo apt install -y libreadline-dev
+	# GCC-6
+	sudo add-apt-repository -y ppa:jonathonf/gcc-6.2
+	sudo apt-get update
+	# apt-cache search gcc-6
+	sudo apt install -y gcc-6
+	sudo apt install -y g++-6
+
+
+	sudo apt install -y cmake libicu-dev libltdl-dev libssl-dev unixodbc-dev libreadline-dev
+	sudo apt install -y libc++-dev
+
 	sudo apt install -y clang
-	sudo apt install -y debhelper
 
 	sudo apt-get install -y software-properties-common
 	sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8
@@ -83,23 +90,19 @@ function install_dependencies()
 	sudo apt-get update
 	sudo apt install -y libmariadbclient-dev
 
-	sudo apt install -y cmake libicu-dev libltdl-dev libssl-dev unixodbc-dev
+
+	sudo apt install -y debhelper
+	sudo apt install -y devscripts
+	sudo apt install -y build-essential
 
 	# GCC-7
 	#sudo add-apt-repository -y ppa:jonathonf/gcc-7.2
 	#sudo apt-get update
-	#apt-cache search gcc-7
+	##apt-cache search gcc-7
 	#sudo apt install -y gcc-7
 	#sudo apt install -y g++-7
 
-	# GCC-6
-	sudo add-apt-repository -y ppa:jonathonf/gcc-6.3
-	sudo apt-get update
-	# apt-cache search gcc-6
-	sudo apt install -y gcc-6
-	sudo apt install -y g++-6
 
-	sudo apt install -y libc++-dev
 
 
 }
