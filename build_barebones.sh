@@ -99,6 +99,8 @@ function install_dependencies()
 	sudo apt install -y gcc-6
 	sudo apt install -y g++-6
 
+	sudo apt install -y libc++-dev
+
 
 }
 
