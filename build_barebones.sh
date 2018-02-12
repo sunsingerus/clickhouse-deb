@@ -75,6 +75,15 @@ function install_dependencies()
 	sudo apt install -y build-essential
 	sudo apt install -y libreadline-dev
 	sudo apt install -y clang
+	sudo apt install -y debhelper
+
+	sudo apt-get install -y software-properties-common
+	sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8
+	sudo add-apt-repository -y 'deb [arch=amd64,i386,ppc64el] http://mirror.timeweb.ru/mariadb/repo/10.2/ubuntu xenial main'
+	sudo apt-get update
+	sudo apt install -y libmariadbclient-dev
+
+	sudo apt install -y cmake libicu-dev libltdl-dev libssl-dev unixodbc-dev
 
 	# GCC-7
 	#sudo add-apt-repository -y ppa:jonathonf/gcc-7.2
