@@ -32,4 +32,6 @@ sudo apt install -y build-essential
 env CMAKE_FLAGS=" -DNO_WERROR=1" ./release
 
 
+# and look for .deb files one level up
 
+ls -l ../*.deb
