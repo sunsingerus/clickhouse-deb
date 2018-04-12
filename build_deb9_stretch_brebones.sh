@@ -14,6 +14,7 @@ sudo apt-get -t testing install gcc-7 g++-7
 
 sudo apt-get install llvm-5.0 llvm-5.0-dev 
 sudo apt-get install clang-5.0 clang-5.0-dev 
+sudo apt-get install clang++-5.0 clang++-5.0-dev 
 
 sudo apt-get install liblld-5.0 liblld-5.0-dev
 
