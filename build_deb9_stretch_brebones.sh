@@ -9,14 +9,14 @@
 # deb http://deb.debian.org/debian experimental main
 # deb http://deb.debian.org/debian testing main
 
-apt-get update
-sudo apt-get -t testing install gcc-7 g++-7
+sudo apt-get update
+sudo apt-get install -y gcc-7 g++-7
 
-sudo apt-get install llvm-5.0 llvm-5.0-dev 
-sudo apt-get install clang-5.0 clang-5.0-dev 
-sudo apt-get install clang++-5.0 clang++-5.0-dev 
+sudo apt-get install -y llvm-5.0 llvm-5.0-dev 
+sudo apt-get install -y clang-5.0 clang-5.0-dev 
+sudo apt-get install -y clang++-5.0 clang++-5.0-dev 
 
-sudo apt-get install liblld-5.0 liblld-5.0-dev
+sudo apt-get install -y liblld-5.0 liblld-5.0-dev
 
 sudo apt install -y cmake libicu-dev libltdl-dev libssl-dev unixodbc-dev libreadline-dev
 sudo apt install -y libc++-dev
