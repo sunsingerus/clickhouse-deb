@@ -2,7 +2,7 @@
 
 sudo apt install -y debhelper
 sudo apt install -y pbuilder
-sudo apt install -y deboostrap
+sudo apt install -y debootstrap
 
 
 ln -s gutsy /usr/share/debootstrap/scripts/artful
