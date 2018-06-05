@@ -31,6 +31,19 @@ sudo apt install -y pbuilder
 sudo apt install -y debootstrap
 
 #
+# Ensure we are inside ClickHouse sources dir
+#
+
+if [ ! -f debian/source/format ]; then
+    echo "Can't locate required file. Are we inside ClickHouse sources dir?"
+fi
+
+if [ ! -f debian/.pbuilderrc ]; then
+    echo "Can't locate required file. Are we inside ClickHouse sources dir?"
+fi
+
+
+#
 # Polish sources
 #
 
