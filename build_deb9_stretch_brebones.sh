@@ -21,6 +21,7 @@ sudo apt-get install -y liblld-5.0 liblld-5.0-dev
 
 sudo apt install -y cmake libicu-dev libltdl-dev libssl-dev unixodbc-dev libreadline-dev
 sudo apt install -y libc++-dev
+sudo apt install -y ninja-build
 
 sudo apt install -y libmariadbclient-dev
 
